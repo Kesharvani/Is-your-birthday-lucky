@@ -1,4 +1,4 @@
-const birthDateSelector=document.querySelector("#date");
+const birthDateSelector=document.querySelector("#datee");
 const luckyNumber=document.querySelector("#num");
 const luckyButton=document.querySelector("#lucky_btn");
 const outputSelector=document.querySelector("#output");

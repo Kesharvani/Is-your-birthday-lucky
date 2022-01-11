@@ -31,6 +31,10 @@ function checkingLucky(sum)
         errorMessage("Something is missing: Please Enter both birthdate and lucky number");
 
     }
+    else if(luckyNumber.value<0)
+    {
+        errorMessage("Please Enter positive lucky number!");
+    }
     else
     {
     
@@ -40,7 +44,7 @@ function checkingLucky(sum)
 
     }
     else{
-        errorMessage("Birthdah is not Lucky");
+        errorMessage("Birth day is not Lucky");
     }
     }
 }

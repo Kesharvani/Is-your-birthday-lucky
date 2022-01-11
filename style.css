@@ -1,19 +1,35 @@
 .container{
     width: 50rem;
-    height: 20rem;
-    background-color: darkblue;
-    display: block;
+    height: 24rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
     text-align: center;
-    margin:0rem;
-    padding:0rem;
+    justify-content: center;
+    background-color: brown;
+    margin-left: 24%;
 }
- h1{
-     text-align: center;
- }
- #datee{
-     text-align: center;
- }
- #output{
-     color: black;
- }
 
+
+#datee{
+    margin-left: 35%;
+    margin-right: 35%;
+    margin-bottom: 3%;
+}
+
+#num{
+    margin-right: 35%;
+    margin-left: 35%;
+    margin-bottom: 7%;
+}
+
+#lucky_btn{
+    margin-bottom: 3%;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+
+#output{
+    color: white;
+}

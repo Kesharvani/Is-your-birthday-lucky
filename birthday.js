@@ -1,7 +1,7 @@
-var birthDateSelector=document.querySelector("#date");
-var luckyNumber=document.querySelector("#num");
-var luckyButton=document.querySelector("#lucky_btn");
-var outputSelector=document.querySelector("#output");
+const birthDateSelector=document.querySelector("#date");
+const luckyNumber=document.querySelector("#num");
+const luckyButton=document.querySelector("#lucky_btn");
+const outputSelector=document.querySelector("#output");
 
 var add=0;
 
@@ -26,12 +26,26 @@ function addDateNumber(birthDate)
 
 function checkingLucky(sum)
 {
+    if(sum===0 || luckyNumber.value==="")
+    {
+        errorMessage("Something is missing: Please Enter both birthdate and lucky number");
+
+    }
+    else
+    {
+    
     if(sum % luckyNumber.value===0)
     {
-        outputSelector.innerText="Birth Day is Lucky";
+        errorMessage("Birth Day is Lucky");
 
     }
     else{
-        outputSelector.innerText="Birthdah is not Lucky";
+        errorMessage("Birthdah is not Lucky");
     }
+    }
+}
+
+function errorMessage(error)
+{
+    outputSelector.innerText=error;
 }
